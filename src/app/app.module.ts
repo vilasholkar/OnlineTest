@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+//import { TestTypeComponent } from './components/admin/test-type/test-type.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -20,7 +21,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    //TestTypeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

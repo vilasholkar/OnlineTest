@@ -8,6 +8,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { MasterComponent } from '../../master/master.component';
+import { TestTypeComponent } from "../../components/admin/test-type/test-type.component";
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
@@ -16,6 +17,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'master',         component: MasterComponent }
+    { path: 'master',         component: MasterComponent },
+    { path: 'test-type',         component: TestTypeComponent }
+    
 
 ];
