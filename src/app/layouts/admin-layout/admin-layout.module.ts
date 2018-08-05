@@ -16,6 +16,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
+import {TestTypeService} from '../../services/admin/test-type.service'
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { ToastrModule } from 'ngx-toastr';
     NotificationsComponent,
     MasterComponent,
     TestTypeComponent
-  ]
+  ],
+  providers:[TestTypeService]
 })
 
 export class AdminLayoutModule {}
