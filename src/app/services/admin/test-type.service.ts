@@ -12,18 +12,20 @@ export class TestTypeService {
     this.headers = new Headers({ 'Content-Type': 'application/json' });        
     this.options = new RequestOptions({ headers: this.headers });
 }
+getTestTypes() :Observable<Response>{
+    return this.http.get<Response>(HostName.API_StartPoint+APIUrl.GET_TestTypes);
+  }
 
-
-getTestTypes(): Observable<any> {
-  return this.http.get(HostName.API_StartPoint+APIUrl.GET_TestTypes)
-      .map((responce: Response) =>{
-          let data=responce;
-          return data;
-      })
-      .catch((error:any)=>{
-          return Observable.throw(error);
-      })
-}
+// getTestTypes(): Observable<any> {
+//   return this.http.get(HostName.API_StartPoint+APIUrl.GET_TestTypes)
+//       .map((responce: Response) =>{
+//           let data=responce;
+//           return data;
+//       })
+//       .catch((error:any)=>{
+//           return Observable.throw(error);
+//       })
+// }
 
 // public createQuotation(model:any):Observable<any>{        
 //   let body :string =JSON.stringify(model);
